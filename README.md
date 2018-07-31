@@ -3,6 +3,8 @@ Heads Up! The project it's the backend for angular project  front-end-spring-sec
 
 About
 This project has been created with Spring boot 2.3.0 and gradle, it's a srping security project base on filtering as cros and more...
+# Gradle Version
+4.9
 
 # Versions of the component
 
