@@ -7,7 +7,7 @@ import com.springbootsecurityback.entities.User;
 
 /* this the user  Repository interface  */ 
 @Repository
-public interface UserRepository extends MongoRepository<User, Long> {
+public interface UserRepository extends MongoRepository<User, String> {
 
 public User findOneByUsername(String username);
 

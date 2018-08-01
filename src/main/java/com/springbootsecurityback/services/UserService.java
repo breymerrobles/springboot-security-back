@@ -8,7 +8,7 @@ import com.springbootsecurityback.dao.UserRepository;
 import com.springbootsecurityback.entities.User;
 
 /**
- * @author kamal berriga
+ * @author breymer.robles
  *
  */
 @Service
@@ -29,16 +29,8 @@ public class UserService {
 		return userRepository.findOneByUsername(userName);
 	}
 	
-	public User findUserPass(String userName, String pass) {
-		
-		final User user=userRepository.findOneByUsername(userName);
-		if(user != null && user.getPassword().equals(pass)){
-			return user;
-		}
-		return null;
-	}
-
-	public User find(Long id) {
+	
+	public User findById(String id) {
 		return userRepository.findById(id).map(u -> u).orElse(null);
 	}
 }

@@ -21,8 +21,6 @@ import com.fasterxml.jackson.annotation.JsonProperty.Access;
  * this class implements users details of the spring security framework
  *******************************************************************************/
 
-
-
 /**
  * 
  *  DB mongo

@@ -12,7 +12,7 @@ import com.springbootsecurityback.entities.User;
 /**
  * This Service class for providing the user credentials from the database.
  * 
- * @author kamal berriga
+ * @author breymer.robles
  *
  */
 @Service

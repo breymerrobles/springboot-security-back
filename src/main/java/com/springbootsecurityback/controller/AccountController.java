@@ -1,6 +1,5 @@
 package com.springbootsecurityback.controller;
 
-import java.util.Base64;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -9,13 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.annotation.Secured;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,17 +18,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.springbootsecurityback.dto.LoginDTO;
 import com.springbootsecurityback.entities.User;
-import com.springbootsecurityback.security.JwtTokenProvider;
 import com.springbootsecurityback.security.helper.SecurityHelper;
 import com.springbootsecurityback.security.role.ROLE;
 import com.springbootsecurityback.services.UserService;
 import com.springbootsecurityback.util.CustomErrorType;
 import com.springbootsecurityback.util.SecurityConstants;
 
-/**
- * @author kamal berriga
- *
- */
 @RestController
 @RequestMapping("account")
 public class AccountController {
